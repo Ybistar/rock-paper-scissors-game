@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background: #f6f7fb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 535px;
+  width: 100%;
+  padding: 2rem 5rem;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.result_images {
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+}
+
+.result_images img {
+  width: 100px;
+}
+
+.result {
+  font-size: 2rem;
+  color: #7d2ae8;
+  margin: 1.5rem 0;
+}
+
+.option_images {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+.option_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.option_image:hover, .option_image.active {
+  opacity: 1;
+}
+
+.option_image img {
+  width: 50px;
+}
+
+.option_image p {
+  color: #7d2ae8;
+  font-size: 1.235rem;
+  margin-top: 1rem;
+}
+
+.scoreboard {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+button, select {
+  margin: 10px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  background: #28a745;
+  color: white;
+}
+
+button:hover {
+  background: #218838;
+}
